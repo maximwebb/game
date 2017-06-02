@@ -1,0 +1,127 @@
+.test {
+	font-size: 85%;
+}
+.button {
+	background-color: #34B0D9;
+	radius: 12px;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	font-family: calibri;
+	font-size: 85%;
+}
+
+.button:hover {
+	background-color: #6FCDEC;
+	cursor:pointer;
+}
+
+.button2 {
+	background-color: #FF5050;
+	radius: 12px;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	font-family: calibri;
+	font-size: 85%;
+}
+
+.button2:hover {
+	background-color: #FF8080;
+	cursor:pointer;
+}
+
+.button3 {
+	background-color:#4CAF50;
+	radius: 12px;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	font-family: calibri;
+	font-size: 85%;
+}
+
+.button3:hover {
+	background-color:#5FB962;
+	cursor:pointer;
+}
+
+.button4 {
+	background-color:#4CAF50;
+	radius: 12px;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	font-family: calibri;
+	font-size: 85%;
+}
+
+.button4:hover {
+	background-color:#5FB962;
+	cursor:pointer;
+}
+.levelEditSliders {
+	radius: 12px;
+	border: 2px solid #ff4d4d;
+	color: black;
+	padding: 6px;
+	width: 100px;
+	border-radius: 8px;
+	font-family: calibri;
+	font-size: 85%;
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}	
+
+.levelEditSliders:hover {
+	background-color: #ff4d4d;
+	color: white;
+}
+
+#mg_canvas {
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+	width: 1600px;
+	height: 800px;
+	border: 4px solid black;
+}
+#slidercontainer {
+    position: relative;
+}
+
+#slidercontainer li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#slidercontainer li, #slidercontainer p {
+    height: 25px;
+    display: block;
+}
+#toggleEdit, .slider {
+	left: 0px;
+	width: 50px;
+	background: url('http://www.godsholytrousers.co.uk/maxim/sprites/slider.png');
+	background-position: 0 0;
+}
+.arrow {
+	font-size: 270%;
+	color: #375fb1;
+}
+.arrow:hover {
+	color: #79a1f4;
+	cursor: pointer;
+}
+</style>

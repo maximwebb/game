@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Singleplayer Game</title>
+<link rel = 'icon' href = 'https://cdn.discordapp.com/emojis/287331251780845569.png'></link>
+<link rel = 'stylesheet' type = 'text/css' href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'></link>
+<link rel = 'stylesheet' type = 'text/css' href = 'singleplayer_game.css'></link>
+<title>CatBook</title>
+<script src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+<script src = 'Scripts/snaptortoise-konami-js-1.4.6-4-g6114bf6/snaptortoise-konami-js-6114bf6/konami.js'></script>
+
+
+</head>
+
+<body onload = 'mg_start()' style = 'font-size:118%;font-family:calibri light;background-color:#E8E8E8'>
+<br><br><br>
+<!--START OF MULTIGAMES-->
+<div class = 'levelEditHUD'></div>
+	<p class = 'arrow levelEditHUD' style = 'position: absolute; left: 1500px; top: 800px' onclick = 'levelEditor.pan(100)'>&#9658 </p>
+	<p class = 'arrow levelEditHUD' style = 'position: absolute; left: 0px; top: 800px' onclick = 'levelEditor.pan(-100)'>&#9668 </p>	
+<p id = "xcounter">Coords</p>
+<div style = 'position: absolute; height: 700px; width: 100px; right: 100px; top: 50px;'>
+
+<button onclick = 'levelEditor.changeBlockType("mg_brick", 0, 0, 100, 100)' class = 'levelEditHUD levelEditSliders' id = 'brickButton'>Brick</button><br><br>
+<button onclick = 'levelEditor.changeBlockType("mg_teleport_station", 11, 78, 78, 22)' class = 'levelEditHUD levelEditSliders' id = 'teleportButton'>Teleport</button><br><br>
+<button onclick = 'levelEditor.changeBlockType("mg_sand", 0, 0, 100, 100)' class = 'levelEditHUD levelEditSliders' id = 'sandButton'>Sand</button><br><br>
+<button onclick = 'levelEditor.changeBlockType("eraser", 0, 0, 100, 100)' class = 'levelEditSliders levelEditHUD' id = 'eraseButton'>Eraser</button><br><br>
+
+</div>
+<ul title = 'Click to change to level editing mode!' onclick = 'levelEditor.toggle()' id = 'slidercontainer'>
+	<li id = 'toggleEdit'></li>
+</ul>
+<br><br><br>
+<p>Thanks Cameron Salter for helping me find a song</p>
+<textarea style = 'width: 1000px; height: 200px' id = 'newLevel' class = 'levelEditHUD'>Click here to copy output</textarea>
+<button class = 'button4 levelEditHUD' onclick = 'levelEditor.copyText()'>Click to copy text</button>
+
+<script src = 'singleplayer.js'>
+
+</script>
+<!--END OF MULTIGAMES -->
+
+
+</body>
+</html>
